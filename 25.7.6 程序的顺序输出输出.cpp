@@ -22,9 +22,9 @@ int main()
 	char C[100];//在以C语言方式定义字符串时确保一个足够大的缓冲区（例子中为100）
 	char D[100];
 	printf("\n输入角色名：");
-	scanf("%99s", &C);//在scanf输入字符串时"%s"中要插入"缓冲区-1"
+	scanf("%99s", C);//在scanf输入字符串时"%s"中要插入"缓冲区-1"，并且在输入字符串数组时不需要&
 	printf("输入编号：");
-	scanf("%99s", &D);
+	scanf("%99s", D);
 	char name[200];
 	sprintf(name, "%s%s", C, D);//将C,D在新建立的缓冲区name中相连，sprintf的作用是将格式化输出写入字符串（例子中为name）。
 	printf("角色名称为：%s", &name);
