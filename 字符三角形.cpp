@@ -4,7 +4,7 @@
 
 void Getcha(int x, char n)
 {
-	std::string s1 = std::string(x,n);//使用 string库 构造字符串
+	std::string s1 = std::string(x,n);//使用 string库 构造字符串,构造包含x个'n'的字符串
 	int b;
 	if (x == 1)
 	{
